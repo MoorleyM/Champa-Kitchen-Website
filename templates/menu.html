@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champa</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/menu.css">
+    <link rel="icon" href="static/pictures/ChampaKitchenLogo.PNG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="static/pictures/ChampaKitchenLogo.png" alt="Logo" class="nav-logo">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="Menu">Menu</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="menu">
+            <div class="menu-container">
+                <div class="button-container" onclick="lunch()">
+                    <div class="button" id="lunch-items">
+                        <div class="item-header">
+                            <h3>Lunch Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="lunch_button" class="items_border">
+                        {% for item in l_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item_id"] }}. {{ item["item"] }}</h3>
+                            {% if item["sauces"]: %}
+                            <p><span class="item_header">Sauces:</span> {{ item["sauces"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            {% if item["meat"]: %}
+                            <p><span class="item_header">Meat:</span> {{ item["meat"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            <p><span class="item_header">Ingredients:</span> {{ item["ingredients"] }}</p>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="starter()">
+                    <div class="button" onclick="" id="starter-items">
+                        <div class="item-header">
+                            <h3>Starter Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="starter_button" class="items_border">
+                        {% for item in s_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item_id"] }}. {{ item["item"] }}</h3>
+                            {% if item["quantity"]: %}
+                            <p><span class="item_header">Quantity:</span> {{ item["quantity"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            <p><span class="item_header">Ingredients:</span> {{ item["ingredients"] }}</p>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="traditional()">
+                    <div class="button" onclick="" id="traditional-items">
+                        <div class="item-header">
+                            <h3>Traditional Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="traditional_button" class="items_border">
+                        {% for item in t_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item_id"] }}. {{ item["item"] }}</h3>
+                            {% if item["side"]: %}
+                                <p><span class="item_header">Side:</span> {{ item["side"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            <p><span class="item_header">Ingredients:</span> {{ item["ingredients"] }}</p>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="soup()">
+                    <div class="button" onclick="" id="soup-items">
+                        <div class="item-header">
+                            <h3>Soups & Salads Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="soup_button" class="items_border">
+                        {% for item in ss_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item_id"] }}. {{ item["item"] }}</h3>
+                            {% if item["side"]: %}
+                                <p><span class="item_header">Side:</span> {{ item["side"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            <p><span class="item_header">Ingredients:</span> {{ item["ingredients"] }}</p>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="pho()">
+                    <div class="button" onclick="" id="pho-items">
+                        <div class="item-header">
+                            <h3>Pho Noodles Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="pho_button" class="items_border">
+                        {% for item in pho_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item_id"] }}. {{ item["item"] }}</h3>
+                            {% if item["side"]: %}
+                                <p><span class="item_header">Side:</span> {{ item["side"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            <p><span class="item_header">Ingredients:</span> {{ item["ingredients"] }}</p>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="curry()">
+                    <div class="button" onclick="" id="curry-items">
+                        <div class="item-header">
+                            <h3>Curry Dishes Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="curry_button" class="items_border">
+                        {% for item in c_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item_id"] }}. {{ item["item"] }}</h3>
+                            {% if item["meat"]: %}
+                                <p><span class="item_header">Meat:</span> {{ item["meat"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            <p><span class="item_header">Ingredients:</span> {{ item["ingredients"] }}</p>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="main()">
+                    <div class="button" onclick="" id="main-items">
+                        <div class="item-header">
+                            <h3>Main Course Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="main_button" class="items_border">
+                        {% for item in m_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item_id"] }}. {{ item["item"] }}</h3>
+                            {% if item["meat"]: %}
+                                <p><span class="item_header">Meat:</span> {{ item["meat"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            {% if item["sauces"]: %}
+                                <p><span class="item_header">Sauces:</span> {{ item["sauces"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            {% if item["quantity"]: %}
+                                <p><span class="item_header">Quantity:</span> {{ item["quantity"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            <p><span class="item_header">Ingredients:</span> {{ item["ingredients"] }}</p>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="noodle()">
+                    <div class="button" onclick="" id="noodle-lover-items">
+                        <div class="item-header">
+                            <h3>Noodle Lover Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="noodle_button" class="items_border">
+                        {% for item in n_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item_id"] }}. {{ item["item"] }}</h3>
+                            {% if item["side"]: %}
+                                <p><span class="item_header">Side:</span> {{ item["side"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            {% if item["meat"]: %}
+                                <p><span class="item_header">Meat:</span> {{ item["meat"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            {% if item["quantity"]: %}
+                                <p><span class="item_header">Quantity:</span> {{ item["quantity"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            <p><span class="item_header">Ingredients:</span> {{ item["ingredients"] }}</p>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="veg()">
+                    <div class="button" onclick="" id="veg-items">
+                        <div class="item-header">
+                            <h3>Vegetarian Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="veg_button" class="items_border">
+                        {% for item in v_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item_id"] }}. {{ item["item"] }}</h3>
+                            {% if item["quantity"]: %}
+                                <p><span class="item_header">Quantity:</span> {{ item["quantity"] }}</p>
+                            {% else %}
+                            {% endif %}
+                            <p><span class="item_header">Ingredients:</span> {{ item["ingredients"] }}</p>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="side()">
+                    <div class="button" id="side-items">
+                        <div class="item-header">
+                            <h3>Side Dishes Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="side_button" class="items_border">
+                        {% for item in si_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item"] }}</h3>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="hot()">
+                    <div class="button" id="hot-items">
+                        <div class="item-header">
+                            <h3>Hot Drinks</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="hot_button" class="items_border">
+                        {% for item in h_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item"] }}</h3>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="button-container" onclick="cold()">
+                    <div class="button" id="cold-items">
+                        <div class="item-header">
+                            <h3>Cold Drinks Menu</h3>
+                        </div>
+                        <div class="button-right-background">
+                            <!-- placeholder for background -->
+                        </div>
+                    </div>
+                    <div id="cold_button" class="items_border">
+                        {% for item in co_items %}
+                        <div class="items_list">
+                            <h3>{{ item["item"] }}</h3>
+                            <p><span class="item_header">Price:</span> ${{ item["price"] }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-left">
+            <a href="https://www.facebook.com/champakitchen.info"><img src="static/pictures/Facebook.png" alt="Facebook" class="social"></a>
+            <a href="https://www.instagram.com/champakitchen.info/"><img src="static/pictures/instagram.png" alt="Instagram" class="social"></a>
+        </div>
+        <div id="footer-center">
+            <p>&#169; {{ year }} Champa Kitchen</p>
+        </div>
+        <div id="footer-right">
+            <p>Mon: CLOSED</p>
+            <p>Tues – Fri: LUNCH: 11:30AM - 2:30PM</p>
+            <p>(CLOSED 3:00PM – 4:00PM)</p>
+            <p>Tues – Fri: DINNER : 4:00PM – 9:00PM</p>
+            <p>Sat: 11:30AM – 9:30PM</p>
+            <p>Sun: 3:30PM – 8:00PM</p>
+        </div>
+    </footer>
+    <script src="static/javascript/menu.js"></script>
+</body>
+</html>
