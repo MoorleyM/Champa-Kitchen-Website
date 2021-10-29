@@ -42,7 +42,7 @@
     section {
         background-image: url("../pictures/food/HomePageBlackedOut.png");
         background-repeat: no-repeat, repeat;
-        background-size: 100%, 100%;
+        background-size: cover;
         height: 100vh;
         margin-top: -1px;
     }
@@ -70,7 +70,7 @@
     }
 
     #skip {
-        height: 100px;
+        height: 90px;
         width: 170px;
         margin: 10px;
     }

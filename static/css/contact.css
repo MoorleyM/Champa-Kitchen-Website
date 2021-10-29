@@ -32,7 +32,7 @@
         border: 10px solid var(--main_color);
         border-radius: 15px;
         margin: 20px;
-        padding: 20px;
+        padding: 0px;
     }
     
     #map img {
@@ -63,7 +63,7 @@
     }
 
     #skip {
-        height: 100px;
+        height: 90px;
         width: 170px;
         margin: 10px;
     }
