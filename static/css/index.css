@@ -1,20 +1,325 @@
 @media (max-width: 320px) {
+
+    h2, h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        font-weight: bold;
+        font-size: 22px;
+        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    section {
+        background-image: url("../pictures/food/HomePageBlackedOut.png");
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        height: 100vh;
+        margin-top: -1px;
+    }
+
+    ul { 
+        margin-bottom: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .written-content {
+        width: 600px;
+    }
+
+    .delivery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skip {
+        height: 90px;
+        width: 170px;
+        margin: 10px;
+    }
+
+    #uber {
+        height: 110px;
+        width: 95px;
+        margin: 10px;
+    }
     
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
 
+    h2, h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        font-weight: bold;
+        font-size: 22px;
+        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    section {
+        background-image: url("../pictures/food/HomePageBlackedOut.png");
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        height: 100vh;
+        margin-top: -1px;
+    }
+
+    ul { 
+        margin-bottom: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .written-content {
+        width: 600px;
+    }
+
+    .delivery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skip {
+        height: 90px;
+        width: 170px;
+        margin: 10px;
+    }
+
+    #uber {
+        height: 110px;
+        width: 95px;
+        margin: 10px;
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+
+    h2, h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        font-weight: bold;
+        font-size: 22px;
+        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    section {
+        background-image: url("../pictures/food/HomePageBlackedOut.png");
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        height: 100vh;
+        margin-top: -1px;
+    }
+
+    ul { 
+        margin-bottom: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .written-content {
+        width: 600px;
+    }
+
+    .delivery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skip {
+        height: 90px;
+        width: 170px;
+        margin: 10px;
+    }
+
+    #uber {
+        height: 110px;
+        width: 95px;
+        margin: 10px;
+    }
 
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
+    h2, h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        font-weight: bold;
+        font-size: 22px;
+        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    section {
+        background-image: url("../pictures/food/HomePageBlackedOut.png");
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        height: 100vh;
+        margin-top: -1px;
+    }
+
+    ul { 
+        margin-bottom: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .written-content {
+        width: 600px;
+    }
+
+    .delivery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skip {
+        height: 90px;
+        width: 170px;
+        margin: 10px;
+    }
+
+    #uber {
+        height: 110px;
+        width: 95px;
+        margin: 10px;
+    }
+
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
+
+    h2, h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        font-weight: bold;
+        font-size: 22px;
+        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    section {
+        background-image: url("../pictures/food/HomePageBlackedOut.png");
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        height: 100vh;
+        margin-top: -1px;
+    }
+
+    ul { 
+        margin-bottom: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .written-content {
+        width: 600px;
+    }
+
+    .delivery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skip {
+        height: 90px;
+        width: 170px;
+        margin: 10px;
+    }
+
+    #uber {
+        height: 110px;
+        width: 95px;
+        margin: 10px;
+    }
 
 }
 

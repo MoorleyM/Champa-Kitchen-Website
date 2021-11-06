@@ -1,24 +1,136 @@
+.items_border {
+    border-top: 2px solid black;
+}
+
+#lunch_button {
+    display: none;
+}
+
+#starter_button {
+    display: none;
+}
+
+#traditional_button {
+    display: none;
+}
+
+#soup_button {
+    display: none;
+}
+
+#pho_button {
+    display: none;
+}
+
+#curry_button {
+    display: none;
+}
+
+#main_button {
+    display: none;
+}
+
+#noodle_button {
+    display: none;
+}
+
+#veg_button {
+    display: none;
+}
+
+#side_button {
+    display: none;
+}
+
+#hot_button {
+    display: none;
+}
+
+#cold_button {
+    display: none;
+}
+
+.items_list {
+    padding: 10px;
+}
+
+.item_header {
+    font-weight: bold;
+}
+
 @media (max-width: 320px) {
+
+    h3 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .container {
+        padding-top: 30px;
+        height: 100%;
+        padding-bottom:30px;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .button-container {
+        width: 75%;
+        min-height: 100px;
+        border: 2px solid var(--nav_footer);
+        border-radius: 10px;
+        box-shadow: 5px 10px 8px var(--nav_footer);
+        margin: 10px;
+    }
+
+    .button-container:hover {
+        cursor: pointer;
+        width: 74%;
+        min-height: 98px;
+        border: 2px solid var(--nav_footer);
+        border-radius: 10px;
+        box-shadow: 5px 10px 8px var(--nav_footer);
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-header {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .button-right-background {
+        background-color: var(--main_color);
+        border-left: 2px solid var(--nav_footer);
+        border-radius: 6px;
+        width: 40%;
+        height: 150px;
+    }
+
+    .button-right img {
+        height: 150px;
+        width: 275px;
+        border-left: 2px solid var(--nav_footer);
+    }
+
+    .items_border {
+        border-top: 2px solid black;
+    }
     
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
-
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-
-}
-
-@media (min-width: 1201px) {
 
     h3 {
         font-size: 22px;
@@ -88,60 +200,288 @@
         border-top: 2px solid black;
     }
 
-    #lunch_button {
-        display: none;
-    }
+}
 
-    #starter_button {
-        display: none;
-    }
+@media (min-width: 481px) and (max-width: 768px) {
 
-    #traditional_button {
-        display: none;
-    }
-
-    #soup_button {
-        display: none;
-    }
-
-    #pho_button {
-        display: none;
-    }
-
-    #curry_button {
-        display: none;
-    }
-
-    #main_button {
-        display: none;
-    }
-
-    #noodle_button {
-        display: none;
-    }
-
-    #veg_button {
-        display: none;
-    }
-
-    #side_button {
-        display: none;
-    }
-
-    #hot_button {
-        display: none;
-    }
-
-    #cold_button {
-        display: none;
-    }
-
-    .items_list {
-        padding: 10px;
-    }
-
-    .item_header {
+    h3 {
+        font-size: 22px;
         font-weight: bold;
+    }
+
+    .container {
+        padding-top: 30px;
+        height: 100%;
+        padding-bottom:30px;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .button-container {
+        width: 75%;
+        min-height: 100px;
+        border: 2px solid var(--nav_footer);
+        border-radius: 10px;
+        box-shadow: 5px 10px 8px var(--nav_footer);
+        margin: 10px;
+    }
+
+    .button-container:hover {
+        cursor: pointer;
+        width: 74%;
+        min-height: 98px;
+        border: 2px solid var(--nav_footer);
+        border-radius: 10px;
+        box-shadow: 5px 10px 8px var(--nav_footer);
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-header {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .button-right-background {
+        background-color: var(--main_color);
+        border-left: 2px solid var(--nav_footer);
+        border-radius: 6px;
+        width: 40%;
+        height: 150px;
+    }
+
+    .button-right img {
+        height: 150px;
+        width: 275px;
+        border-left: 2px solid var(--nav_footer);
+    }
+
+    .items_border {
+        border-top: 2px solid black;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    h3 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .container {
+        padding-top: 30px;
+        height: 100%;
+        padding-bottom:30px;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .button-container {
+        width: 75%;
+        min-height: 100px;
+        border: 2px solid var(--nav_footer);
+        border-radius: 10px;
+        box-shadow: 5px 10px 8px var(--nav_footer);
+        margin: 10px;
+    }
+
+    .button-container:hover {
+        cursor: pointer;
+        width: 74%;
+        min-height: 98px;
+        border: 2px solid var(--nav_footer);
+        border-radius: 10px;
+        box-shadow: 5px 10px 8px var(--nav_footer);
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-header {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .button-right-background {
+        background-color: var(--main_color);
+        border-left: 2px solid var(--nav_footer);
+        border-radius: 6px;
+        width: 40%;
+        height: 150px;
+    }
+
+    .button-right img {
+        height: 150px;
+        width: 275px;
+        border-left: 2px solid var(--nav_footer);
+    }
+
+    .items_border {
+        border-top: 2px solid black;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    h3 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .container {
+        padding-top: 30px;
+        height: 100%;
+        padding-bottom:30px;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .button-container {
+        width: 75%;
+        min-height: 100px;
+        border: 2px solid var(--nav_footer);
+        border-radius: 10px;
+        box-shadow: 5px 10px 8px var(--nav_footer);
+        margin: 10px;
+    }
+
+    .button-container:hover {
+        cursor: pointer;
+        width: 74%;
+        min-height: 98px;
+        border: 2px solid var(--nav_footer);
+        border-radius: 10px;
+        box-shadow: 5px 10px 8px var(--nav_footer);
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-header {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .button-right-background {
+        background-color: var(--main_color);
+        border-left: 2px solid var(--nav_footer);
+        border-radius: 6px;
+        width: 40%;
+        height: 150px;
+    }
+
+    .button-right img {
+        height: 150px;
+        width: 275px;
+        border-left: 2px solid var(--nav_footer);
+    }
+
+    .items_border {
+        border-top: 2px solid black;
+    }
+
+}
+
+@media (min-width: 1201px) {
+
+    h3 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .container {
+        padding-top: 30px;
+        height: 100%;
+        padding-bottom:30px;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .button-container {
+        width: 75%;
+        min-height: 100px;
+        border: 2px solid var(--nav_footer);
+        border-radius: 10px;
+        box-shadow: 5px 10px 8px var(--nav_footer);
+        margin: 10px;
+    }
+
+    .button-container:hover {
+        cursor: pointer;
+        width: 74%;
+        min-height: 98px;
+        border: 2px solid var(--nav_footer);
+        border-radius: 10px;
+        box-shadow: 5px 10px 8px var(--nav_footer);
+    }
+
+    .button {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-header {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .button-right-background {
+        background-color: var(--main_color);
+        border-left: 2px solid var(--nav_footer);
+        border-radius: 6px;
+        width: 40%;
+        height: 150px;
+    }
+
+    .button-right img {
+        height: 150px;
+        width: 275px;
+        border-left: 2px solid var(--nav_footer);
     }
 
 }
