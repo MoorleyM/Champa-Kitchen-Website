@@ -75,7 +75,13 @@
         border-left: 2px solid var(--nav_footer);
         border-radius: 6px;
         width: 40%;
-        height: 100px;
+        height: 150px;
+    }
+
+    .button-right img {
+        height: 150px;
+        width: 275px;
+        border-left: 2px solid var(--nav_footer);
     }
 
     .items_border {
