@@ -1,0 +1,78 @@
+section {
+    width: 100%;
+    background-color: var(--orange_background);
+    min-height: 980px;
+    margin-top: -150px;
+}
+
+#info-container {
+    margin-top: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#hours {
+    display: flex;
+    flex-direction: column;
+}
+
+#delivery {
+    margin-top: 50px;
+}
+
+#info-social {
+    margin-top: 70px;
+    margin-bottom: -20px;
+}
+
+#social-buttons {
+    display: flex;
+    margin-top: -20px;
+}
+
+#hours h1 {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#hours p {
+    margin: 5px;
+    margin-left: 22px;
+}
+
+#contact h1 {
+    margin: 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#contact h2 {
+    margin: 5px;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.weekdays {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#map img {
+    width: 800px;
+    height: 600px;
+}
+
+#map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#map h1{
+    font-size: 26px;
+    font-weight: bold;
+}

@@ -32,10 +32,16 @@ def menu():
                            si_items=si_menu, h_items=h_drinks, co_items=c_drinks, l_items=l_menu)
 
 
-@app.route("/Contact")
+@app.route("/Info")
 def contact():
     current_year = datetime.now().year
-    return render_template("contact.html", year=current_year)
+    return render_template("info.html", year=current_year)
+
+
+@app.route("/Gallery")
+def gallery():
+    current_year = datetime.now().year
+    return render_template("gallery.html", year=current_year)
 
 
 if __name__ == "__main__":

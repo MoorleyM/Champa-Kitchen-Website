@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    {% block css %}
+    {% endblock %}
+    <link rel="icon" href="static/pictures/ChampaKitchenLogo.PNG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div id="nav-image">
+            <img src="static/pictures/ChampaKitchenLogo.png" alt="Logo" class="nav-logo">
+        </div>
+        <div id="nav-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="Menu">Menu</a></li>
+                <li><a href="Info">Info</a></li>
+                <li><a href="Gallery">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    <footer>
+        <div id=container>
+            <div id="footer-left">
+                <h1>Champa Kitchen Thai - Lao - Vietnamese Cuisine</h1>
+                <h2>21 King Street North</h2>
+                <h2>Waterloo, ON N2J 2W6</h2>
+                <h2>519-208-7877</h2>
+            </div>
+            <div id="footer-right">
+                <a href="https://www.facebook.com/champakitchen.info"><img src="static/pictures/Facebook.png" alt="Facebook" class="social"></a>
+                <a href="https://www.instagram.com/champakitchen.info/"><img src="static/pictures/instagram.png" alt="Instagram" class="social"></a>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>&#169; {{ year }} Champa Kitchen</p>
+        </div>
+    </footer>
+    {% block scripts %}
+    {% endblock %}
+</body>

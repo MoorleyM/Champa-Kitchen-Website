@@ -1,389 +1,45 @@
-@media (max-width: 320px) {
-
-    h2, h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000000;
-        font-weight: bold;
-        font-size: 22px;
-        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
-    }
-
-    h1 {
-        font-size: 26px;
-        margin-bottom: 25px;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    section {
-        background-image: url("../pictures/food/HomePageBlackedOut.png");
-        background-repeat: no-repeat, repeat;
-        background-size: cover;
-        height: 100vh;
-        margin-top: -1px;
-    }
-
-    ul { 
-        margin-bottom: 0px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .written-content {
-        width: 600px;
-    }
-
-    .delivery {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #skip {
-        height: 90px;
-        width: 170px;
-        margin: 10px;
-    }
-
-    #uber {
-        height: 110px;
-        width: 95px;
-        margin: 10px;
-    }
-    
+#index-section{
+    overflow: hidden;
+    position: relative;
+    margin-top: -150px;
 }
 
-@media (min-width: 321px) and (max-width: 480px) {
-
-    h2, h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000000;
-        font-weight: bold;
-        font-size: 22px;
-        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
-    }
-
-    h1 {
-        font-size: 26px;
-        margin-bottom: 25px;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    section {
-        background-image: url("../pictures/food/HomePageBlackedOut.png");
-        background-repeat: no-repeat, repeat;
-        background-size: cover;
-        height: 100vh;
-        margin-top: -1px;
-    }
-
-    ul { 
-        margin-bottom: 0px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .written-content {
-        width: 600px;
-    }
-
-    .delivery {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #skip {
-        height: 90px;
-        width: 170px;
-        margin: 10px;
-    }
-
-    #uber {
-        height: 110px;
-        width: 95px;
-        margin: 10px;
-    }
-
+#index-section img {
+    overflow: hidden;
+    position: relative;
+    margin-top: -175px;
+    margin-bottom: -150px;
+    min-height: 1300px;
+    width: 100%;
+    opacity: .4;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-
-    h2, h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000000;
-        font-weight: bold;
-        font-size: 22px;
-        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
-    }
-
-    h1 {
-        font-size: 26px;
-        margin-bottom: 25px;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    section {
-        background-image: url("../pictures/food/HomePageBlackedOut.png");
-        background-repeat: no-repeat, repeat;
-        background-size: cover;
-        height: 100vh;
-        margin-top: -1px;
-    }
-
-    ul { 
-        margin-bottom: 0px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .written-content {
-        width: 600px;
-    }
-
-    .delivery {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #skip {
-        height: 90px;
-        width: 170px;
-        margin: 10px;
-    }
-
-    #uber {
-        height: 110px;
-        width: 95px;
-        margin: 10px;
-    }
-
+nav {
+    position: relative;
+    z-index: 99999;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    h2, h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000000;
-        font-weight: bold;
-        font-size: 22px;
-        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
-    }
-
-    h1 {
-        font-size: 26px;
-        margin-bottom: 25px;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    section {
-        background-image: url("../pictures/food/HomePageBlackedOut.png");
-        background-repeat: no-repeat, repeat;
-        background-size: cover;
-        height: 100vh;
-        margin-top: -1px;
-    }
-
-    ul { 
-        margin-bottom: 0px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .written-content {
-        width: 600px;
-    }
-
-    .delivery {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #skip {
-        height: 90px;
-        width: 170px;
-        margin: 10px;
-    }
-
-    #uber {
-        height: 110px;
-        width: 95px;
-        margin: 10px;
-    }
-
+#homepage-text {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    /* margin-top: -700px; */
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
-
-    h2, h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000000;
-        font-weight: bold;
-        font-size: 22px;
-        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
-    }
-
-    h1 {
-        font-size: 26px;
-        margin-bottom: 25px;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    section {
-        background-image: url("../pictures/food/HomePageBlackedOut.png");
-        background-repeat: no-repeat, repeat;
-        background-size: cover;
-        height: 100vh;
-        margin-top: -1px;
-    }
-
-    ul { 
-        margin-bottom: 0px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .written-content {
-        width: 600px;
-    }
-
-    .delivery {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #skip {
-        height: 90px;
-        width: 170px;
-        margin: 10px;
-    }
-
-    #uber {
-        height: 110px;
-        width: 95px;
-        margin: 10px;
-    }
-
+h1 {
+    font-size: 80px;
+    /* color: var(--nav_text); */
+    color: var(--nav_footer);
+    position: relative;
+    z-index: 99999;
+    margin-bottom: 20px;
 }
 
-@media (min-width: 1201px) {
-
-    h2, h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #000000;
-        font-weight: bold;
-        font-size: 22px;
-        text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
-    }
-
-    h1 {
-        font-size: 26px;
-        margin-bottom: 25px;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    section {
-        background-image: url("../pictures/food/HomePageBlackedOut.png");
-        background-repeat: no-repeat, repeat;
-        background-size: cover;
-        height: 100vh;
-        margin-top: -1px;
-    }
-
-    ul { 
-        margin-bottom: 0px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .written-content {
-        width: 600px;
-    }
-
-    .delivery {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #skip {
-        height: 90px;
-        width: 170px;
-        margin: 10px;
-    }
-
-    #uber {
-        height: 110px;
-        width: 95px;
-        margin: 10px;
-    }
-
+h2 {
+    font-size: 35px;
+    /* color: var(--nav_text); */
+    color: var(--nav_footer);
+    position: relative;
+    z-index: 99999;
+    margin-bottom: 20px;
 }

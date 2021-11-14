@@ -1,61 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Champa</title>
-    <link rel="stylesheet" href="static/css/styles.css">
+{% extends "base_template.html" %}
+    {% block head %}
+    {% block title %}Champa Kitchen{% endblock %}
+    {% block css %}
     <link rel="stylesheet" href="static/css/index.css">
-    <link rel="icon" href="static/pictures/ChampaKitchenLogo.PNG">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav>
-        <img src="static/pictures/ChampaKitchenLogo.png" alt="Logo" class="nav-logo">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="Menu">Menu</a></li>
-            <li><a href="Contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="container">
-            <div class="written-content">
-                <h1>CHAMPA KITCHEN</h1>
-                <h2>YOUR EVERYDAY FOOD WITH AN ASIAN TWIST ALL IN ONE PLACE. OFFERRING FRESH AUTHENTIC THAI - LAO - VIETNAMESE CUISINE.</h2>
-                <h2>DINE IN, PICK UP AND DELIVERY WITH UBER EATS AND SKIP THE DISHES! ORDER NOW!</h2>
-            </div>
-            <div>
-                <div class="delivery">
-                    <div>
-                        <img src="static/pictures/SkipTheDishes.png" alt="Skip The Dishes" id="skip">
-                    </div>
-                    <div>
-                        <img src="static/pictures/UberEats.png" alt="Uber Eats" id="uber">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div id="footer-left">
-            <a href="https://www.facebook.com/champakitchen.info"><img src="static/pictures/Facebook.png" alt="Facebook" class="social"></a>
-            <a href="https://www.instagram.com/champakitchen.info/"><img src="static/pictures/instagram.png" alt="Instagram" class="social"></a>
+    {% endblock %}
+    {% endblock %}
+    {% block body %}
+    <section id="index-section">
+        <img src="../static/pictures/food/HomePage.jpg" alt="Food-Home-Page">
+        <div id="homepage-text">
+            <h1>Welcome To Champa Kitchen!</h1>
+            <h2>Waterloo's Brand New Authentic Thai - Lao - Vietnamese Cuisine.</h2>
         </div>
-        <div id="footer-center">
-            <p>&#169; {{ year }} Champa Kitchen</p>
-        </div>
-        <div id="footer-right">
-            <p>Mon: CLOSED</p>
-            <p>Tues – Fri: LUNCH: 11:30AM - 2:30PM</p>
-            <p>(CLOSED 3:00PM – 4:00PM)</p>
-            <p>Tues – Fri: DINNER : 4:00PM – 9:00PM</p>
-            <p>Sat: 11:30AM – 9:30PM</p>
-            <p>Sun: 3:30PM – 8:00PM</p>
-        </div>
-    </footer>
-</body>
-</html>
+    </section>
+    {% endblock %}

@@ -1,0 +1,49 @@
+{% extends "base_template.html" %}
+    {% block head %}
+    {% block title %}Champa Kitchen{% endblock %}
+    {% block css %}
+    <link rel="stylesheet" href="static/css/info.css">
+    {% endblock %}
+    {% endblock %}
+    {% block body %}
+    <section>
+        <div id="info-container">
+            <div id="hours">
+                <div>
+                    <h1>Business Hours</h1>
+                    <p><span class="weekdays">Monday:</span> Closed</p>
+                    <p><span class="weekdays">Tuesday - Friday Lunch:</span> 11:30AM - 2:30PM</p>
+                    <p><span class="weekdays">(CLOSED 3:00PM - 4:00PM)</span></p>
+                    <p><span class="weekdays">Tuesday - Friday Lunch:</span> 4:00PM - 9:00PM</p>
+                    <p><span class="weekdays">Saturday:</span> 11:30AM - 9:30pm</p>
+                    <p><span class="weekdays">Sunday:</span> 3:30PM - 8:00PM</p>
+                </div>
+                <div id="delivery">
+                    <h1>Delivery Service</h1>
+                    <p><span class="weekdays">Skip The Dishes</span></p>
+                    <p><span class="weekdays">Uber Eats</span></p>
+                </div>
+            </div>
+            <div id="contact">
+                <div>
+                    <h1>Contact Information</h1>
+                    <h2>Champa Kitchen</h2>
+                    <h2>21 King Street North</h2>
+                    <h2>Waterloo, ON N2J 2W6</h2>
+                    <h2>519-208-7877</h2>
+                </div>
+                <div id="info-social">
+                    <h1>Social Media</h1>
+                    <div id="social-buttons">
+                        <a href="https://www.facebook.com/champakitchen.info"><img src="static/pictures/Facebook.png" alt="Facebook" class="social"></a>
+                        <a href="https://www.instagram.com/champakitchen.info/"><img src="static/pictures/instagram.png" alt="Instagram" class="social"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="map">
+                <h1>Uptown Waterloo</h1>
+                <img src="../static/pictures/ChampaKitchenMap.PNG" alt="Map">
+            </div>
+        </div>
+    </section>
+    {% endblock %}

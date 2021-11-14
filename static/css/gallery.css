@@ -1,0 +1,28 @@
+section {
+    width: 100%;
+    background-color: var(--orange_background);
+    min-height: 980px;
+    margin-top: -150px;
+}
+
+.column {
+    margin: 200px;
+    margin-top: 250px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row img {
+    width: 350px;
+    height: 350px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
