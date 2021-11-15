@@ -76,3 +76,45 @@ section {
     font-size: 26px;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 720px) {
+    section {
+        min-height: 600px;
+        margin-top: -320px;
+    }
+
+    #info-container {
+        margin-top: 350px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #map img {
+        width: 400px;
+        height: 300px;
+    }
+
+    #info-social {
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    #social-buttons {
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    h1, h2 {
+        margin: 0px;
+    }
+
+    #info-social h1 {
+        margin-left: 60px;
+    }
+}

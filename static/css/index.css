@@ -23,12 +23,10 @@ nav {
     position: absolute;
     top: 500px;
     left: 100px;
-    /* margin-top: -700px; */
 }
 
 h1 {
     font-size: 80px;
-    /* color: var(--nav_text); */
     color: var(--nav_footer);
     position: relative;
     z-index: 99999;
@@ -37,9 +35,42 @@ h1 {
 
 h2 {
     font-size: 35px;
-    /* color: var(--nav_text); */
     color: var(--nav_footer);
     position: relative;
     z-index: 99999;
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+    #index-section img {
+        display: none;
+    }
+
+    #index-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--orange_background);
+        min-height: 600px;
+        margin-top: -320px;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 4px;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    #homepage-text {
+        top: 400px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

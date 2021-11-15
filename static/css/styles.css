@@ -191,3 +191,62 @@ footer h2 {
 #copyright {
     font-size: 20px;
 }
+
+@media only screen and (max-width: 720px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-image {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #nav-menu {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap;
+    }
+
+    #nav-menu a {
+        margin-right: 0px;
+    }
+
+    li:last-child {
+        margin-right: 0px;
+    }
+
+    #container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-left {
+        margin-top: 0px;
+    }
+
+    #footer-right {
+        margin-right: 0px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .social {
+        height: 45px;
+        width: 45px;
+        margin: 5px;
+    }
+}
